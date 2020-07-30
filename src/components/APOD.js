@@ -27,20 +27,10 @@ class APOD extends React.Component {
     }
     render() {
         return (
-            <div>
-                {/* Console log every apod in array */}
-                { this.state.info.map(apod => {
-                    console.log(apod);
-                return (
-                    <div className="apod">
-                        <h1>{apod.date}</h1>
-                        <img src={apod.url} alt=""></img>
-                        <p>{apod.description}</p>
-                        
-                    </div>
-                )
-                })
-                }
+            <div className="child">
+                <h1>{this.state.info.date}</h1>
+                <img src={this.state.info.url} alt=""></img>
+                <p>{this.state.info.explanation}</p>
             </div>
         )
     }
