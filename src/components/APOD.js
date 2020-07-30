@@ -11,16 +11,25 @@ class APOD extends React.Component {
             info: [],
         };
     }
+    async getAPOD() {
+        try {
+            const res = await axios.get(BASE_URL);
+            console.log(res);
+            this.setState(
+                { info: res.data }
+            )
+        } catch {
+
+        }
+    }
     componentDidMount() {
-        axios.get(`${BASE_URL}&date=2020-07-30`)
-        .then(res => this.setState({info: res.data.results}))
-        .catch(e => console.error(e.message))
+        this.getAPOD();
     }
     render() {
         return (
             <div>
-                {/* Console log every person in array */}
-                { this.state.info.map(apod=> {
+                {/* Console log every apod in array */}
+                { this.state.info.map(apod => {
                     console.log(apod);
                 return (
                     <div className="apod">
