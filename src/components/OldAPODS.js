@@ -9,11 +9,17 @@ class OldAPODS extends React.Component {
 
         this.state = {
             info: [],
+            date: "",
         };
     }
+    onDateChange = (e) => {
+        this.setState({
+          date: e.target.value,
+        })
+      }
     async getOldAPODS() {
         try {
-            const res = await axios.get(BASE_URL);
+            const res = await axios.get(BASE_URL + this.state.date);
             console.log(res);
             this.setState(
                 { info: res.data }
@@ -30,9 +36,11 @@ class OldAPODS extends React.Component {
 
             <div className="child pastApods">
                 <form className="form">
-                    <label>What date would you like to see (YY-MM-DD):</label> 
+                    <label>What date would you like to see (YYYY-MM-DD):</label> 
                     <br></br>
-                    <input type="text" placeholder="YY-MM-DD" />
+                    <input type="text" placeholder="YYYY-MM-DD" 
+                        value={this.state.date} onChange={this.onDateChange}
+                    />
                 </form>
                 
                 {/* <div className="date">
@@ -45,7 +53,7 @@ class OldAPODS extends React.Component {
                     <p>{this.state.info.explanation}</p>
                 </div> */}
                 <div className="oldApods">
-                    <button>Check Out A Different Date</button>
+                    <button type="submit">Check Out A Different Date</button>
                 </div>
             </div>
         )
