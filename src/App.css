@@ -15,8 +15,16 @@ body {
   justify-content: space-evenly;
   list-style: none;
 }
-Link {
-  text-decoration-line: none;
+a {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+.selected {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 p {
   font-size: 12px;
