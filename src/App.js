@@ -17,15 +17,15 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      
       
 <Router>
-      <div>
-              <Header />
-            </div>
-      <div className="child nav">
-        <nav>
-          <ul>
+    
+    
+      <div className="App">
+        <Header />
+        <nav className="child nav">
+          <ul >
             <li>
               <NavLink activeClassName="selected" 
               to="/home"
@@ -54,9 +54,10 @@ class App extends React.Component {
           </Route>
         </Switch>
       </div>
+      
     </Router>
 
-      </div>
+      
 
       
   );
