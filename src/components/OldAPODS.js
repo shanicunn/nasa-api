@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ViewAPOD from './ViewAPOD';
-// import Input from './Input';
+
 
 const BASE_URL = "https://api.nasa.gov/planetary/apod?api_key=M0Q1d8CExIBLjGoFC0Stdn2ZC0OtYK7Dlo2KFqBd";
 
@@ -47,20 +47,21 @@ class OldAPODS extends React.Component {
 
             <div className="child pastApods">
                <div className="form">
-                   {/* <Input /> */}
                    <form className="form">
                     <label>What date would you like to see (YYYY-MM-DD):</label> 
                     <br></br>
                     <input type="text" placeholder="YYYY-MM-DD" 
                         value={this.state.userDate} onChange={this.onDateChange}
                     />
-                    <ViewAPOD 
-                        
-                    />
                 </form>
                </div>
-               
-               
+                <div className="viewApods-pastApods">
+                        <ViewAPOD 
+                        date={this.state.info.date}
+                        url={this.state.info.url}
+                        explanation={this.state.info.explanation}
+                    />
+                    </div>
                 <div className="oldApods">
                     <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
                 </div>
