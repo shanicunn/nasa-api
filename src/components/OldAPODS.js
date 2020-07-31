@@ -60,6 +60,9 @@ class OldAPODS extends React.Component {
                     <input type="text" placeholder="YYYY-MM-DD" 
                         value={this.state.userDate} onChange={this.onDateChange}
                     />
+                    <div className="oldApods">
+                    <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
+                </div>
                 </form>
                </div>
                 <div className="viewApods-pastApods">
@@ -70,9 +73,7 @@ class OldAPODS extends React.Component {
                         explanation={this.state.info.explanation}
                     />
                     </div>
-                <div className="oldApods">
-                    <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
-                </div>
+                
             </div>
         )
     }
