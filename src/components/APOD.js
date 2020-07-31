@@ -31,6 +31,9 @@ class APOD extends React.Component {
                 <div className="date">
                     <h1>{this.state.info.date}</h1>
                 </div>
+                <div className="title">
+                    <h1>{this.state.info.title}</h1>
+                </div>
                 <div className="photo">
                     <img src={this.state.info.url} alt=""></img>
                 </div>
