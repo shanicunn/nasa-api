@@ -59,3 +59,9 @@ img {
 .apod .oldApods {
   grid-area: oldApods;
 }
+.pastApods {
+  display: grid;
+  grid-template-areas: "date date"
+                        "explanation photo"
+                        "oldApods oldApods";
+}
