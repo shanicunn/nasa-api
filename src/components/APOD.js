@@ -27,7 +27,7 @@ class APOD extends React.Component {
     }
     render() {
         return (
-            <div className="child">
+            <div className="child apod">
                 <div className="date">
                     <h1>{this.state.info.date}</h1>
                 </div>
@@ -37,7 +37,9 @@ class APOD extends React.Component {
                 <div className="explanation">
                     <p>{this.state.info.explanation}</p>
                 </div>
-                
+                <div className="oldApods">
+                    <button>Check Out Past Dates</button>
+                </div>
             </div>
         )
     }
