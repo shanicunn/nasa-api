@@ -8,6 +8,9 @@ class ViewAPOD extends React.Component {
           <div className="date">
             <h1>{this.props.date}</h1>
         </div>
+        <div classname="title">
+          <h1>{this.props.title}</h1>
+        </div>
         <div className="photo">
             <img src={this.props.url} alt=""></img>
         </div>
