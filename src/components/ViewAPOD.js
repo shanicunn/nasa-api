@@ -1,19 +1,22 @@
 import React from 'react';
+import '../App.css';
 
-const ViewAPOD = (props) => {
-    return (
-        <div>
+class ViewAPOD extends React.Component {
+  render() {
+     return (
+        <div className="viewAPods">
           <div className="date">
-                <h1>{props.state.info.date}</h1>
+                <h1>{this.props.date}</h1>
         </div>
         <div className="photo">
-                    <img src={props.state.info.url} alt=""></img>
+                    <img src={this.props.url} alt=""></img>
         </div>
         <div className="explanation">
-                    <p>{props.state.info.explanation}</p>
+                    <p>{this.props.explanation}</p>
         </div>   
         </div>
     )
+  }
   }
 
 export default ViewAPOD;
