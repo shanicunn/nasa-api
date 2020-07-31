@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import APOD from './components/APOD';
 import OldAPODS from './components/OldAPODS';
+import Header from './components/Header';
 import Sources from './components/Sources';
 import {
   BrowserRouter as Router,
@@ -16,7 +17,12 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
+      <div>
+      
+<Router>
+      <div>
+              <Header />
+            </div>
       <div className="child nav">
         <nav>
           <ul>
@@ -49,6 +55,10 @@ class App extends React.Component {
         </Switch>
       </div>
     </Router>
+
+      </div>
+
+      
   );
   }
   
