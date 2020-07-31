@@ -28,9 +28,16 @@ class APOD extends React.Component {
     render() {
         return (
             <div className="child">
-                <h1>{this.state.info.date}</h1>
-                <img src={this.state.info.url} alt=""></img>
-                <p>{this.state.info.explanation}</p>
+                <div className="date">
+                    <h1>{this.state.info.date}</h1>
+                </div>
+                <div className="photo">
+                    <img src={this.state.info.url} alt=""></img>
+                </div>
+                <div className="explanation">
+                    <p>{this.state.info.explanation}</p>
+                </div>
+                
             </div>
         )
     }
