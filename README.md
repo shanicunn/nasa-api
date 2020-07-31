@@ -8,9 +8,9 @@
 * [NASA APOD API](https://api.nasa.gov/planetary/apod)
 
 # Wireframe
-![Wireframe](src/assets/Wireframe1.png)
-![Wireframe](src/assets/Wireframe2.png)
-![Wireframe](src/assets/Wireframe3.png)
+![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe1.png)
+![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe2.png)
+![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe2.png)
 
 # Expected roadblocks
 * API Difficulty
