@@ -32,9 +32,7 @@ body {
 }
 
 /* NAVIGATION */
-.nav {
-  
-}
+
 .nav ul {
   display: flex;
   font-size: 30px;
@@ -94,21 +92,44 @@ img {
   grid-area: oldApods;
 }
 /* OLD APODS COMP */
+
 .form {
   grid-area: form;
+  color: white;
+  display: flex;
 }
+label {
+  margin: 10px;
+}
+input {
+  height: 40px;
+  margin: 10px;
+}
+button {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  background-color: teal;
+  box-shadow: coral 0 0 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+.pastApods {
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas: 
+                        "form"
+                        "viewApods-pastApods"
+                        "oldApods"
+}
+/* VIEW APODS COMP */
 .viewApods {
   display: grid;
   grid-template-areas: 
                         "date date"
                         "explanation photo"
                         
-}
-/* VIEW APODS COMP */
-.pastApods {
-  display: grid;
-  grid-template-areas: 
-                        "form"
-                        "viewApods-pastApods"
-                        "oldApods"
 }
