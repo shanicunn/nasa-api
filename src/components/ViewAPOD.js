@@ -5,16 +5,16 @@ class ViewAPOD extends React.Component {
   render() {
      return (
         <div className="viewAPods">
-          <div className="date">
+          <div className="view-date">
             <h1>{this.props.date}</h1>
         </div>
-        <div classname="title">
+        <div className="view-title">
           <h1>{this.props.title}</h1>
         </div>
-        <div className="photo">
+        <div className="view-photo">
             <img src={this.props.url} alt=""></img>
         </div>
-        <div className="explanation">
+        <div className="view-explanation">
             <p>{this.props.explanation}</p>
         </div>   
         </div>
