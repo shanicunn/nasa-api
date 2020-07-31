@@ -22,6 +22,7 @@ a {
 }
 .selected {
   text-decoration: none;
+  color: coral;
 }
 a:hover {
   color: white;
@@ -59,9 +60,13 @@ img {
 .apod .oldApods {
   grid-area: oldApods;
 }
+.form {
+  grid-area: form;
+}
 .pastApods {
   display: grid;
-  grid-template-areas: "date date"
+  grid-template-areas: "form form"
+                        "date date"
                         "explanation photo"
                         "oldApods oldApods";
 }
