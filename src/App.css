@@ -1,6 +1,12 @@
+body {
+  background-image: url('./assets/images/dan-russo-adkrsIr_0iw-unsplash.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
 .App {
   width: 800px;
   margin: auto;
+  
 }
 p {
   font-size: 12px;
