@@ -55,14 +55,13 @@ class OldAPODS extends React.Component {
             <div className="child pastApods">
                <div className="form">
                    <form className="form" onSubmit={this.handleFormSubmission}> 
-                    <label>What date would you like to see (YYYY-MM-DD):</label> 
+                    <label>What date would you like to see?</label> 
                     <br></br>
                     <input type="text" placeholder="YYYY-MM-DD" 
                         value={this.state.userDate} onChange={this.onDateChange}
                     />
-                    <div className="oldApods">
+                    
                     <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
-                </div>
                 </form>
                </div>
                 <div className="viewApods-pastApods">
