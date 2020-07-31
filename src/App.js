@@ -21,13 +21,15 @@ class App extends React.Component {
         <nav>
           <ul>
             <li>
-              <NavLink to="/home">HOME</NavLink>
+              <NavLink activeClassName="selected" 
+              to="/home"
+              >HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/oldApod">PAST APODS</NavLink>
+              <NavLink activeClassName="selected" to="/oldApod">PAST APODS</NavLink>
             </li>
             <li>
-              <NavLink to="/sources">SOURCES</NavLink>
+              <NavLink activeClassName="selected" to="/sources">SOURCES</NavLink>
             </li>
           </ul>
         </nav>
