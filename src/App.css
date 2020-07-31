@@ -1,7 +1,8 @@
 body {
+  /* background-image: url('./assets/images/alexander-andrews-eNoeWZkO7Zc-unsplash.jpg'); */
   background-image: url('./assets/images/dan-russo-adkrsIr_0iw-unsplash.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-attachment: fixed; */
+  background-size: contain;
   background-color: black;
 }
 
@@ -10,12 +11,22 @@ body {
   margin: auto;
   background-color: #2A4556;
 }
+/* HEADER */
+.header {
+  /* background-image: url('./assets/images/farzad-mohsenvand-TbuescuqMjA-unsplash.jpg');
+  background-size: cover; */
+  height: 200px;
+}
+  
+
+/* NAVIGATION */
 .nav ul {
   display: flex;
   font-size: 30px;
   justify-content: space-evenly;
   list-style: none;
 }
+/* LINKS */
 a {
   text-decoration: none;
   color: darkgoldenrod;
@@ -28,9 +39,10 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+/* TEXT STYLING */
 p {
-  font-size: 12px;
-  color: black;
+  font-size: 16x;
+  color: white;
 }
 h1 {
   color: cadetblue;
@@ -38,18 +50,23 @@ h1 {
 h2 {
   color: darkgoldenrod;
 }
-
+/* IMAGES */
 img {
   width: 400px;
 }
+/* APOD COMP */
 .apod {
   display: grid;
   grid-template-areas: "date date"
+                        "title title"
                         "photo explanation"
                         "oldApods oldApods";
 }
 .date {
   grid-area: date;
+}
+.title {
+  grid-area: title;
 }
 .photo {
   grid-area: photo;
@@ -60,6 +77,7 @@ img {
 .apod .oldApods {
   grid-area: oldApods;
 }
+/* OLD APODS COMP */
 .form {
   grid-area: form;
 }
@@ -70,6 +88,7 @@ img {
                         "explanation photo"
                         
 }
+/* VIEW APODS COMP */
 .pastApods {
   display: grid;
   grid-template-areas: 
