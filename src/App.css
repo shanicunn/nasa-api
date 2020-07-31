@@ -10,6 +10,9 @@ body {
   width: 1000px;
   margin: auto;
   background-color: #2A4556;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Raleway', sans-serif;
+
 }
 /* HEADER */
 .header {
