@@ -9,6 +9,15 @@ body {
   margin: auto;
   
 }
+.nav ul {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+Link {
+  
+}
 p {
   font-size: 12px;
   color: black;
