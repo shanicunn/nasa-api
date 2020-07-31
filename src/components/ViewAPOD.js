@@ -6,13 +6,13 @@ class ViewAPOD extends React.Component {
      return (
         <div className="viewAPods">
           <div className="date">
-                <h1>{this.props.date}</h1>
+            <h1>{this.props.date}</h1>
         </div>
         <div className="photo">
-                    <img src={this.props.url} alt=""></img>
+            <img src={this.props.url} alt=""></img>
         </div>
         <div className="explanation">
-                    <p>{this.props.explanation}</p>
+            <p>{this.props.explanation}</p>
         </div>   
         </div>
     )
