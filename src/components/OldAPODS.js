@@ -21,12 +21,12 @@ class OldAPODS extends React.Component {
         })
 
       }
-    //   handleFormSubmission = (e) => {
-    //     e.preventDefault()
-    //     this.setState({
-    //       formCompleted: true,
-    //     })
-    //   }
+      handleFormSubmission = (e) => {
+        e.preventDefault()
+        this.setState({
+          formCompleted: true,
+        })
+      }
     async getOldAPODS() {
         try {
             const res = await axios.get(`${BASE_URL}&date=${this.state.userDate}`);
@@ -62,7 +62,7 @@ class OldAPODS extends React.Component {
                
                
                 <div className="oldApods">
-                    <button type="submit" onClick={this.onDateChange}>Check Out A Different Date</button>
+                    <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
                 </div>
             </div>
         )
