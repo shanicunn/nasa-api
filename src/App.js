@@ -7,7 +7,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -21,13 +21,13 @@ class App extends React.Component {
         <nav>
           <ul>
             <li>
-              <Link to="/home">HOME</Link>
+              <NavLink to="/home">HOME</NavLink>
             </li>
             <li>
-              <Link to="/oldApod">PAST APODS</Link>
+              <NavLink to="/oldApod">PAST APODS</NavLink>
             </li>
             <li>
-              <Link to="/sources">SOURCES</Link>
+              <NavLink to="/sources">SOURCES</NavLink>
             </li>
           </ul>
         </nav>
