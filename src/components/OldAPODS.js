@@ -29,7 +29,13 @@ class OldAPODS extends React.Component {
         return (
 
             <div className="child pastApods">
-                <div className="date">
+                <form className="form">
+                    <label>What date would you like to see (YY-MM-DD):</label> 
+                    <br></br>
+                    <input type="text" placeholder="YY-MM-DD" />
+                </form>
+                
+                {/* <div className="date">
                     <h1>{this.state.info.date}</h1>
                 </div>
                 <div className="photo">
@@ -37,7 +43,7 @@ class OldAPODS extends React.Component {
                 </div>
                 <div className="explanation">
                     <p>{this.state.info.explanation}</p>
-                </div>
+                </div> */}
                 <div className="oldApods">
                     <button>Check Out A Different Date</button>
                 </div>
