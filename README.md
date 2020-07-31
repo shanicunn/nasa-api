@@ -1,9 +1,5 @@
 [Live Site]().
 
-
-
-![Wireframe]() 
-
 # What is your application?
 * Site that pulls information from NASA for their Astrology Picture of the Day
 * It will allow users to find a picture of the day by date
@@ -12,7 +8,9 @@
 * [NASA APOD API](https://api.nasa.gov/planetary/apod)
 
 # Wireframe
-![Wireframe](src/assets/Mod2Wire.png)
+![Wireframe](src/assets/Web 1920 – 1.png)
+![Wireframe](src/assets/Web 1920 – 2.png)
+![Wireframe](src/assets/Web 1920 – 3.png
 
 # Expected roadblocks
 * API Difficulty
