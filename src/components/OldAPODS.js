@@ -5,6 +5,7 @@ import ViewAPOD from './ViewAPOD';
 
 const BASE_URL = "https://api.nasa.gov/planetary/apod?api_key=M0Q1d8CExIBLjGoFC0Stdn2ZC0OtYK7Dlo2KFqBd";
 
+
 class OldAPODS extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +15,8 @@ class OldAPODS extends React.Component {
             userDate: "",
             formCompleted: false,
         };
+        // Angel's edit
+        this.handleFormSubmission = this.handleFormSubmission.bind(this);
     }
     onDateChange = (e) => {
         this.setState({
@@ -23,9 +26,13 @@ class OldAPODS extends React.Component {
       }
       handleFormSubmission = (e) => {
         e.preventDefault()
+        // Angel's edit
+        console.log(`${BASE_URL}&date=${this.state.userDate}`)
         this.setState({
           formCompleted: true,
         })
+        // Angel's edit
+        this.getOldAPODS();
       }
     async getOldAPODS() {
         try {
@@ -39,15 +46,15 @@ class OldAPODS extends React.Component {
 
         }
     }
-    componentDidMount() {
-        this.getOldAPODS();
-    }
+    // componentDidMount() {
+    //     this.getOldAPODS();
+    // }
     render() {
         return (
 
             <div className="child pastApods">
                <div className="form">
-                   <form className="form">
+                   <form className="form" onSubmit={this.handleFormSubmission}> 
                     <label>What date would you like to see (YYYY-MM-DD):</label> 
                     <br></br>
                     <input type="text" placeholder="YYYY-MM-DD" 
