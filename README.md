@@ -8,9 +8,9 @@
 * [NASA APOD API](https://api.nasa.gov/planetary/apod)
 
 # Wireframe
-![Wireframe](src/assets/Web 1920 – 1.png)
-![Wireframe](src/assets/Web 1920 – 2.png)
-![Wireframe](src/assets/Web 1920 – 3.png
+![Wireframe](src/assets/Wireframe1.png)
+![Wireframe](src/assets/Wireframe2.png)
+![Wireframe](src/assets/Wireframe3.png)
 
 # Expected roadblocks
 * API Difficulty
