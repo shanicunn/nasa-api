@@ -25,10 +25,15 @@ body {
   border-top-right-radius: 30px;
   
 }
-.header h1{
+.header h1 {
   margin: auto;
   font-size: 60px;
-  text-shadow: white 1px 1px 1px ;
+  /* color: linear-gradient( 359deg,  rgba(150,192,255,1) -17.7%, rgba(255,180,161,1) 101.5% ); */
+  background: -webkit-linear-gradient(  rgba(150,192,255,1), rgba(255,180,161,1) 101.5% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: white 1px 1px 1px ; */
 }
 
 /* NAVIGATION */
@@ -57,9 +62,11 @@ a:hover {
 p {
   font-size: 16x;
   color: white;
+  margin: 10px;
 }
 h1 {
   color: cadetblue;
+  margin: 10px;
 }
 h2 {
   color: darkgoldenrod;
@@ -88,11 +95,31 @@ img {
 .explanation {
   grid-area: explanation;
 }
-.apod .oldApods {
+.oldApods {
   grid-area: oldApods;
 }
-/* OLD APODS COMP */
 
+/* VIEW APODS COMP */
+.viewApods {
+  display: grid;
+  grid-template-areas: 
+                        "view-date view-date"
+                        "view-title view-title"
+                        "view-explanation view-photo";
+}
+.view-date {
+  grid-area: view-date;
+}
+.view-title {
+  grid-area: view-title;
+}
+.view-explanation {
+  grid-area: view-explanation;
+}
+.view-photo{
+  grid-area: view-photo;
+}
+/* OLD APODS COMP */
 .form {
   grid-area: form;
   color: white;
@@ -117,19 +144,12 @@ button {
   margin-top: 10px;
   color: white;
 }
-.pastApods {
+
+/* .pastApods {
   margin-top: 10px;
   display: grid;
   grid-template-areas: 
                         "form"
-                        "viewApods-pastApods"
-                        "oldApods"
-}
-/* VIEW APODS COMP */
-.viewApods {
-  display: grid;
-  grid-template-areas: 
-                        "date date"
-                        "explanation photo"
-                        
-}
+                        "viewApods-pastApods";
+
+} */
