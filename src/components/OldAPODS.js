@@ -65,6 +65,7 @@ class OldAPODS extends React.Component {
                 <div className="viewApods-pastApods">
                         <ViewAPOD 
                         date={this.state.info.date}
+                        title={this.state.info.title}
                         url={this.state.info.url}
                         explanation={this.state.info.explanation}
                     />
