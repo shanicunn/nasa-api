@@ -12,6 +12,7 @@ body {
   background-color: #2A4556;
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Raleway', sans-serif;
+  box-shadow: white 0 0 10px;
 
 }
 /* HEADER */
@@ -19,15 +20,27 @@ body {
   /* background-image: url('./assets/images/farzad-mohsenvand-TbuescuqMjA-unsplash.jpg');
   background-size: cover; */
   height: 200px;
-}
+  display: flex;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   
+}
+.header h1{
+  margin: auto;
+  font-size: 60px;
+  text-shadow: white 1px 1px 1px ;
+}
 
 /* NAVIGATION */
+.nav {
+  
+}
 .nav ul {
   display: flex;
   font-size: 30px;
   justify-content: space-evenly;
   list-style: none;
+  
 }
 /* LINKS */
 a {
