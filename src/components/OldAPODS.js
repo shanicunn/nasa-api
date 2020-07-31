@@ -56,7 +56,6 @@ class OldAPODS extends React.Component {
                <div className="form">
                    <form className="form" onSubmit={this.handleFormSubmission}> 
                     <label>What date would you like to see?</label> 
-                    <br></br>
                     <input type="text" placeholder="YYYY-MM-DD" 
                         value={this.state.userDate} onChange={this.onDateChange}
                     />
