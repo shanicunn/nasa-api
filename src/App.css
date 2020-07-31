@@ -4,10 +4,10 @@ body {
   background-size: cover;
   background-color: black;
 }
-.App {
-  width: 800px;
+
+.child {
+  width: 1000px;
   margin: auto;
-  
 }
 .nav ul {
   display: flex;
@@ -16,7 +16,7 @@ body {
   list-style: none;
 }
 Link {
-  
+  text-decoration-line: none;
 }
 p {
   font-size: 12px;
