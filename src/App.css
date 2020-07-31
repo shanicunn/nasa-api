@@ -63,10 +63,17 @@ img {
 .form {
   grid-area: form;
 }
-.pastApods {
+.viewApods {
   display: grid;
-  grid-template-areas: "form form"
+  grid-template-areas: 
                         "date date"
                         "explanation photo"
-                        "oldApods oldApods";
+                        
+}
+.pastApods {
+  display: grid;
+  grid-template-areas: 
+                        "form"
+                        "viewApods-pastApods"
+                        "oldApods"
 }
