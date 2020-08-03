@@ -6,6 +6,7 @@ function Sources() {
             <h1>Sources:</h1>
             <ul>
                 <li> <a href="https://api.nasa.gov/">NASA's APOD API</a></li>
+                <li>Angel</li>
             </ul>
         </div>
     )
