@@ -18,27 +18,30 @@ class OldAPODS extends React.Component {
         // Angel's edit
         this.handleFormSubmission = this.handleFormSubmission.bind(this);
     }
+    // Updates userDate when user inputs date
     onDateChange = (e) => {
         this.setState({
           userDate: e.target.value,
         })
 
       }
-      handleFormSubmission = (e) => {
+    // Updates form submission on submit
+    handleFormSubmission = (e) => {
         e.preventDefault()
         // Angel's edit
-        console.log(`${BASE_URL}&date=${this.state.userDate}`)
+        // console.log(`${BASE_URL}&date=${this.state.userDate}`)
         this.setState({
           formCompleted: true,
         })
         // Angel's edit
         this.getOldAPODS();
       }
+    
     async getOldAPODS() {
         try {
             const res = await axios.get(`${BASE_URL}&date=${this.state.userDate}`);
-            console.log(res);
-            console.log(`${BASE_URL}&date=${this.state.userDate}`)
+            // console.log(res);
+            // console.log(`${BASE_URL}&date=${this.state.userDate}`)
             this.setState(
                 { info: res.data }
             )
@@ -46,13 +49,16 @@ class OldAPODS extends React.Component {
 
         }
     }
+    // Commented out because it actually needs to wait for user input
     // componentDidMount() {
     //     this.getOldAPODS();
     // }
+
     render() {
         return (
 
             <div className="child pastApods">
+            {/* Form includes user input for userDate */}
                <div className="form">
                    <form className="form" onSubmit={this.handleFormSubmission}> 
                     <label>What date would you like to see?</label> 
@@ -63,6 +69,7 @@ class OldAPODS extends React.Component {
                     <button type="submit" onClick={this.handleFormSubmission}>Check Out A Different Date</button>
                 </form>
                </div>
+               {/* Actual APOD being displayed here after input */}
                 <div className="viewApods-pastApods">
                         <ViewAPOD 
                         date={this.state.info.date}
