@@ -86,6 +86,7 @@ img {
 }
 .date {
   grid-area: date;
+  color: coral;
 }
 .title {
   grid-area: title;
