@@ -1,9 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-function OldButton() {
+const OldButton = (props) => {
     return (
         <div>
-            <button onClick={props.oldButton} >Check Out Past Dates</button>
+        {/* https://github.com/ReactTraining/react-router/issues/1176 */}
+        <Link to="/oldApod">
+            <button onClick={props.oldButton}>Check Out Past Dates</button>
+            </Link>
         </div>
     )
 }
