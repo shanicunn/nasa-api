@@ -2,7 +2,7 @@ body {
   /* background-image: url('./assets/images/alexander-andrews-eNoeWZkO7Zc-unsplash.jpg'); */
   background-image: url('./assets/images/dan-russo-adkrsIr_0iw-unsplash.jpg');
   /* background-attachment: fixed; */
-  background-size: contain;
+  background-size: cover;
   background-color: black;
 }
 
