@@ -64,6 +64,7 @@ p {
   font-size: 16x;
   color: white;
   margin: 10px;
+  padding: 1px;
 }
 h1 {
   color: cadetblue;
@@ -103,7 +104,7 @@ img {
 }
 
 /* VIEW APODS COMP */
-.viewApods {
+.viewAPods {
   display: grid;
   grid-template-areas: 
                         "view-date view-date"
