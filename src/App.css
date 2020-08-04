@@ -110,6 +110,7 @@ img {
                         "view-date view-date"
                         "view-title view-title"
                         "view-explanation view-photo";
+  padding: 1px;
 }
 .view-date {
   grid-area: view-date;
