@@ -7,6 +7,7 @@ function Sources() {
             <ul>
                 <li> <a href="https://api.nasa.gov/">NASA's APOD API</a></li>
                 <li>Angel</li>
+                <li><a href="https://github.com/ReactTraining/react-router/issues/1176">React Link with components</a></li>
             </ul>
         </div>
     )
