@@ -10,7 +10,7 @@
 # Wireframe
 ![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe1.png)
 ![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe2.png)
-![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe2.png)
+![Wireframe](https://github.com/shanicunn/nasa-api/blob/master/src/assets/Wireframe3.png)
 
 # Expected roadblocks
 * API Difficulty
@@ -22,15 +22,15 @@
 * Create input for users to choose dates
 
 # There should be 2 container components (stateful)
-*  
-*   
+*  APOD
+*  OldAPODS
 
 # There should be 5 presentational components (stateless)
-* Home Page
+* Header
 * Sources
-* API call
-*
-*
+* OldButton
+* ViewAPOD
+* App
 
 # There should be 3 or more routes
 * Home
