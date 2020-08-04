@@ -12,8 +12,13 @@ import {
 } from "react-router-dom";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    
+  }
+
   componentDidMount() {
-    console.log("Mounted")
+    // console.log("App.js mounted")
   }
   render() {
     return (
