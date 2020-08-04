@@ -5,7 +5,9 @@ body {
   background-size: cover;
   background-color: black;
 }
-
+.App {
+  margin-bottom: 10px;
+}
 .child {
   width: 1000px;
   margin: auto;
