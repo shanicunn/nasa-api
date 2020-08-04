@@ -89,6 +89,7 @@ img {
 }
 .title {
   grid-area: title;
+  color: darkgoldenrod;
 }
 .photo {
   grid-area: photo;

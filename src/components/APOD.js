@@ -46,10 +46,10 @@ class APOD extends React.Component {
             // Displays date, title, photo, image and button to see old APODs
             <div className="child apod">
                 <div className="date">
-                    <h1>{this.state.info.date}</h1>
+                    <h1 className="date">{this.state.info.date}</h1>
                 </div>
                 <div className="title">
-                    <h1>{this.state.info.title}</h1>
+                    <h1 className="title">{this.state.info.title}</h1>
                 </div>
                 <div className="photo">
                     <img src={this.state.info.url} alt=""></img>

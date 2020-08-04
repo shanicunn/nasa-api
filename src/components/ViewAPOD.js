@@ -7,10 +7,10 @@ class ViewAPOD extends React.Component {
       //  Displays APOD in OldAPODS component
         <div className="viewAPods">
           <div className="view-date">
-            <h1>{this.props.date}</h1>
+            <h1 className="date">{this.props.date}</h1>
         </div>
         <div className="view-title">
-          <h1>{this.props.title}</h1>
+          <h1 className="title">{this.props.title}</h1>
         </div>
         <div className="view-photo">
             <img src={this.props.url} alt=""></img>
