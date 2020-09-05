@@ -19,7 +19,7 @@ class APOD extends React.Component {
     // Asynchronous method to retireve APOD api
     async getAPOD  () {
         try {
-            const res = await axios.get(BASE_URL + "&date=2020-09-04");
+            const res = await axios.get(BASE_URL);
             console.log(res);
             this.setState(
                 { info: res.data }
