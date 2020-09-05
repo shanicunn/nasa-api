@@ -36,3 +36,9 @@
 * Home
 * Sources
 * Past APODs
+
+# Personal Stretch Goals
+* Home to display today's APOD
+* Add animation to Header
+* Remove border for images when image is not present
+* Fix off centering of some elements
