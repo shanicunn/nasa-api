@@ -57,7 +57,7 @@ class OldAPODS extends React.Component {
     render() {
         return (
 
-            <div className="child pastApods">
+            <div className="child pastApods border">
             {/* Form includes user input for userDate */}
                <div className="form">
                    <form className="form" onSubmit={this.handleFormSubmission}> 
