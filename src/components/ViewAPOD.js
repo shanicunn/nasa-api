@@ -5,7 +5,7 @@ class ViewAPOD extends React.Component {
   render() {
      return (
       //  Displays APOD in OldAPODS component
-        <div className="viewAPods">
+        <div className="viewAPods ">
           <div className="view-date">
             <h1 className="date">{this.props.date}</h1>
         </div>
