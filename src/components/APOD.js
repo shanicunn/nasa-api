@@ -15,19 +15,11 @@ class APOD extends React.Component {
             // isEmptyState: true ,
         };
     }
-    // https://flaviocopes.com/react-show-different-component-on-click/
-    // Button function
-//     triggerAddTripState = () => {
-//         this.setState({
-//         ...this.state,
-//         isEmptyState: false,
-//         isOldButtonState: true,
-//     })
-//   }
+
     // Asynchronous method to retireve APOD api
     async getAPOD  () {
         try {
-            const res = await axios.get(BASE_URL);
+            const res = await axios.get(BASE_URL + "&date=2020-09-04");
             console.log(res);
             this.setState(
                 { info: res.data }
@@ -44,7 +36,7 @@ class APOD extends React.Component {
     render() {
         return (
             // Displays date, title, photo, image and button to see old APODs
-            <div className="child apod">
+            <div className="child apod border">
                 <div className="date">
                     <h1 className="date">{this.state.info.date}</h1>
                 </div>
