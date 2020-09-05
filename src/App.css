@@ -6,15 +6,22 @@ body {
   background-color: black;
 }
 .App {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 .child {
   width: 1000px;
-  margin: auto;
-  background-color: #2A4556;
+  justify-self: center;
+  align-self: center;
+  /* background-color: #2A4556; */
+  background-color: black;
+  opacity: 80%;
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Raleway', sans-serif;
-  box-shadow: white 0 0 10px;
+  box-shadow: white 1px 1px 4px 2px;
+  /* padding: 10px; */
 
 }
 /* HEADER */
@@ -65,8 +72,7 @@ a:hover {
 p {
   font-size: 16x;
   color: white;
-  margin: 10px;
-  padding: 1px;
+  
 }
 h1 {
   color: cadetblue;
@@ -78,6 +84,8 @@ h2 {
 /* IMAGES */
 img {
   width: 400px;
+  border: white solid 1px;
+  
 }
 /* APOD COMP */
 .apod {
@@ -86,23 +94,30 @@ img {
                         "title title"
                         "photo explanation"
                         "oldApods oldApods";
+
 }
 .date {
   grid-area: date;
   color: coral;
+  text-align: center;
 }
 .title {
   grid-area: title;
   color: darkgoldenrod;
+  text-align: center;
+
 }
 .photo {
   grid-area: photo;
+  padding: 20px;
 }
 .explanation {
   grid-area: explanation;
+  padding: 20px;
 }
 .oldApods {
   grid-area: oldApods;
+  text-align: center;
 }
 
 /* VIEW APODS COMP */
@@ -112,25 +127,32 @@ img {
                         "view-date view-date"
                         "view-title view-title"
                         "view-explanation view-photo";
-  padding: 1px;
+  
 }
 .view-date {
   grid-area: view-date;
+  text-align: center;
 }
 .view-title {
   grid-area: view-title;
+  text-align: center;
 }
 .view-explanation {
   grid-area: view-explanation;
+  padding: 20px;
 }
 .view-photo{
   grid-area: view-photo;
+  padding: 20px;
 }
 /* OLD APODS COMP */
 .form {
   grid-area: form;
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 label {
   margin: 10px;
@@ -145,22 +167,33 @@ button {
   border: none;
   justify-content: center;
   background-color: teal;
-  box-shadow: coral 0 0 5px;
+  
   margin-left: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
   color: white;
+  opacity: 100%;
 }
-
-/* .pastApods {
-  margin-top: 10px;
-  display: grid;
-  grid-template-areas: 
-                        "form"
-                        "viewApods-pastApods";
-
-} */
+button:hover {
+  opacity: 80%;
+}
 /* SOURCES */
 .sources {
   padding: 1px;
+}
+.sources h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.sources li {
+  color: coral;
+  text-align: center;
+  list-style: none;
+  line-height: 30px;
+}
+
+
+.border {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
