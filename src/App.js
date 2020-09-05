@@ -28,8 +28,7 @@ class App extends React.Component {
         <nav className="child nav">
           <ul >
             <li>
-              <NavLink activeClassName="selected" 
-              to="/home"
+              <NavLink activeClassName="selected" to="/home"
               >HOME</NavLink>
             </li>
             <li>
