@@ -28,7 +28,7 @@ class App extends React.Component {
         <nav className="child nav">
           <ul >
             <li>
-              <NavLink activeClassName="selected" to="/home"
+              <NavLink activeClassName="selected" to="/"
               >HOME</NavLink>
             </li>
             <li>
@@ -43,7 +43,7 @@ class App extends React.Component {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/home">
+          <Route path="/">
             <APOD />
           </Route>
           <Route path="/oldApod">
