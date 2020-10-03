@@ -8,7 +8,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink,
+  Redirect
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -28,8 +29,7 @@ class App extends React.Component {
         <nav className="child nav">
           <ul >
             <li>
-              <NavLink activeClassName="selected" to="/"
-              >HOME</NavLink>
+              <NavLink activeClassName="selected" to="/home">HOME</NavLink>
             </li>
             <li>
               <NavLink activeClassName="selected" to="/oldApod">PAST APODS</NavLink>
@@ -43,7 +43,10 @@ class App extends React.Component {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home">
             <APOD />
           </Route>
           <Route path="/oldApod">
